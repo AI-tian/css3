@@ -1,0 +1,101 @@
+body,ul,li{
+    margin: 0;
+    padding: 0;
+}
+ul,li{
+    list-style: none;
+}
+.clockWrap{
+    position: relative;
+    width:210px;
+    height: 210px;
+    background-color: #f0f3f8;
+    margin: 100px auto;
+    border-radius: 50%;
+    box-shadow: 0px 0px 2px #333;
+
+}
+.clockWrap .cl_borer{
+    position: absolute;
+    top:0;
+    left: 0;
+    bottom: 0;
+    right:0;
+    margin: auto;
+    padding: 2px;
+    width: 170px;
+    height: 170px;
+    border: 10px solid #6A6A82;
+    border-radius: 50%;
+    box-shadow:inset 0px 0px 70px #d7eff9
+}
+.cl_borer > ul > li{
+    position: absolute;
+    left:0;
+    right: 0;
+    margin: auto;
+    width: 1px;
+    height:7px;
+    background-color: #333;
+    transform-origin: center 85px;
+}
+.cl_borer > ul > li:nth-child(5n){
+    width: 2px;
+    height:10px;
+    font-size: 12px;
+    line-height: 35px;
+    text-indent: -4px;
+}
+.cl_borer .cl_hour{
+    position: absolute;
+    top:calc(50% - 50px);
+    left:calc(50% - 2.5px);
+    width:5px;
+    height: 55px;
+    background-color: #333;
+    border-radius: 2.5px 2.5px 0 0;
+    transform-origin: center bottom;
+}
+.cl_borer .cl_hour > i{
+    position: absolute;
+    top:0;
+    left:0;
+    bottom: 0;
+    right: 0;
+    width: 1px; 
+    height: 40px;
+    background-color: #fff;
+    margin: auto;
+    box-shadow: 0 0 10px #ccc inset;  
+}
+.cl_borer .cl_min{
+    position: absolute;
+    top:calc(50% - 70px);
+    left:calc(50% - 2.5px);
+    width:3px;
+    height: 70px;
+    background-color: #333;
+    border-radius: 2.5px 2.5px 0 0;
+    transform-origin: center bottom;
+}
+.cl_borer .cl_soc{
+    position: absolute;
+    top:calc(50% - 80px);
+    left:calc(50% - 2.5px);
+    width:2px;
+    height: 80px;
+    background-color: #333;
+    border-radius: 2.5px 2.5px 0 0;
+    transform-origin: center bottom;
+    box-shadow: 0 0 6px #b4b1ab
+}
+.cl_borer .cl_crile{
+    position: absolute;
+    top:calc(50% - 2px);
+    left:calc(50% - 5px);
+    width:10px;
+    height: 10px;
+    background-color: #f1f1f1;
+    border-radius:50%;
+    box-shadow: 0 0 5px #ccc ;
+}
